@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -19,7 +20,7 @@ import java.util.Scanner;
  */
 public class Controller {
 
-    private HashMap<String, Country> countries = new HashMap<>();
+    private Map<String, Country> countries = new HashMap<>();
 
     public Controller(){
         getCountriesFromJSON();
@@ -121,7 +122,7 @@ public class Controller {
         }
     }
 
-    public HashMap<String, Country> getCountries(){
+    public Map<String, Country> getCountries(){
         return countries;
     }
 }
